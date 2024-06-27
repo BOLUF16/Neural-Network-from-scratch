@@ -80,7 +80,6 @@ def compute_cost(A3, y):
 
 def Train_netwrok(X, y, number_iter = 1000, epoch = 64):
     W1, b1, W2, b2, W3, b3 = initialize_param()
-    cost_history = []
     for i in range(epoch):
         for j in range(number_iter):
            Z1,A1,Z2,A2,Z3,A3 =  Forward_prop(W1,b1,W2, b2, W3, b3,X)
